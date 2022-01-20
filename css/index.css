@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'M PLUS 1 Code', sans-serif;
+    color: #cfcfcf;
+}
+
+body {
+    background-color: #2e2e2e;
+}
+
+#message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 100;
+}
