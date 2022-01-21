@@ -11,12 +11,61 @@
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@nullA1m" />
         <title>LaF Client</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="./css/index.css" rel="stylesheet">
+        <link rel="icon" href="./img/favicon.ico">
     </head>
     <body>
-        <div id="message">We're working now :)</div>
+        <script src="./script/index.js"></script>
+        <div id="usePC">
+            This client is not compatible with smartphone.
+            Please use PC to download the installer.
+        </div>
+        <div id="iconHolder">
+            <img id="iconImg" src="./img/icon.png"/>
+        </div>
+        <div id="releaseInfo">
+            <div id="iconTitle">
+                <div>
+                    <img id="iconImg2" src="./img/icon.png"/>
+                </div>
+                LaF Client <span id="versionText">vX.Y.Z</span>
+            </div>
+            <div id="buttonsHolder">
+                <div class="button">
+                    <a id="mpLink" href="" style="position: absolute;display: block;width: 100%;height: 100%;"></a> 
+                    <img id="mpLogo" src="./img/windows.png"/>
+                    <div>
+                        <div id="mpOS">Platform</div>
+                        <div id="mpInfo"><span id="mpSize">XMB</span> - <span id="mpBit">32/64bit</span></div>
+                    </div>
+                </div>
+                <div id="subHolder">
+                    <div class="button sp">
+                        <a id="spLink1" href="" style="position: absolute;display: block;width: 100%;height: 100%;"></a> 
+                        <img class="spLogo" id="spLogo1" src="./img/apple.svg"/>
+                        <div>
+                            <div class="spOS" id="spOS1">Platform</div>
+                            <div class="spInfo" id="spInfo1"><span id="spSize1">XMB</span> - <span id="spBit1">32/64bit</span></div>
+                        </div>
+                    </div>
+                    <div class="button sp">
+                        <a id="spLink2" href="" style="position: absolute;display: block;width: 100%;height: 100%;"></a> 
+                        <img class="spLogo" id="spLogo2" src="./img/linux.svg"/>
+                        <div>
+                            <div class="spOS" id="spOS2">Platform</div>
+                            <div class="spInfo" id="spInfo2"><span id="spSize2">XMB</span> - <span id="spBit2">32/64bit</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <a href="https://github.io/LaFClient/LaF" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/GitHub-LaFClient%2FLaF-white" alt=""></a>
+            <a href="https://github.io/LaFClient/LaF/releases/latest" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/downloads/LaFClient/LaF/total" alt=""></a>
+            <img src="https://discord.com/api/guilds/911130667448954880/widget.png?style=shield" alt="">
+            <div style="height: 10px;"></div>
+            <div id="copyrights">(c) 2022 LaF Development Team</div>
+        </div>
     </body>
 </html>
