@@ -37,21 +37,39 @@ body {
 }
 
 .logs {
-    color: var(--white);
-    width: min(50vw, 500px);
-    margin-left:auto;
-    margin-right:auto;
-    padding:30px;
-    margin-top:20px;
-}
-.version{
-    border-bottom:solid 2px var(--white);
-    bottom:5px;
+    color       : var(--white);
+    width       : min(50vw, 500px);
+    margin-left : auto;
+    margin-right: auto;
+    padding     : 30px;
+    margin-top  : 20px;
 }
 
-.logs:nth-child(2) .version:after {
+.logs h1 {
+    border-bottom: solid 2px var(--white);
+    bottom       : 5px;
+    margin-left:10px;
+}
+.logs li{
+    line-height: 25px;
+    font-size:20px;
+}
+.logs:nth-child(2) h1:after {
     content    : "Latest";
+    float      : right;
     color      : var(--aqua);
     font-size  : 20px;
     text-shadow: 0 0 3px var(--aqua);
+}
+.dl{
+    float:right;
+    text-decoration: unset;
+    font-size:20px;
+    margin-right:20px;
+    color:var(--black);
+    background:var(--aqua);
+    padding:5px 10px;
+}
+.dl:hover{
+    box-shadow: 0 0 10px var(--blue-shadow);
 }

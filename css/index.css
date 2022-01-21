@@ -1,7 +1,7 @@
 :root {
     --white      : #cfcfcf;
     --black      : #2e2e2e;
-    --black-blue:#223334;
+    --black-blue : #223334;
     --blue-shadow: #3e7879;
     --aqua       : #2bfbff;
 }
@@ -54,16 +54,18 @@
 html {
     overflow  : hidden;
     background: var(--black);
+    animation : bg-animation 10s infinite;
 }
 
 body {
-    position     : absolute;
-    width        : 100%;
-    height       : 100%;
-    margin       : unset !important;
-    background   : repeating-linear-gradient(-72deg, var(--black), var(--black) 100px, var(--black-blue) 100px, var(--black-blue) 200px);
+    position         : absolute;
+    width            : 100%;
+    height           : 100%;
+    margin           : unset !important;
+    background-repeat: round;
+    animation        : bganimation 10s infinite linear;
+    background       : repeating-linear-gradient(-72deg, var(--black), var(--black) 100px, var(--black-blue) 100px, var(--black-blue) 200px);
 }
-
 
 #footer {
     position  : absolute;
