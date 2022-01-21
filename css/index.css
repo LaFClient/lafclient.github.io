@@ -1,17 +1,29 @@
+:root {
+    --white      : #cfcfcf;
+    --black      : #2e2e2e;
+    --blue-shadow: #3e7879;
+    --aqua       : #2bfbff;
+
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 
 @keyframes rollingIcon {
     0% {
         transform: rotate(0deg);
-        filter: drop-shadow(0 0 1vh #3e7879);
+        filter   : drop-shadow(0 0 1vh var(--blue-shadow));
     }
+
     75% {
         transform: rotate(360deg);
-        filter: drop-shadow(0 0 3vh #3e7879);
+        filter   : drop-shadow(0 0 3vh var(--blue-shadow));
     }
+
     100% {
         transform: rotate(360deg);
-        filter: drop-shadow(0 0 1vh #3e7879);
+        filter   : drop-shadow(0 0 1vh var(--blue-shadow));
     }
 }
 
@@ -19,6 +31,7 @@
     0% {
         opacity: 0%;
     }
+
     100% {
         opacity: 100%;
     }
@@ -28,6 +41,7 @@
     0% {
         opacity: 100%;
     }
+
     100% {
         opacity: 0%;
     }
@@ -36,123 +50,150 @@
 * {
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 400;
-    color: #2e2e2e;
+    color      : var(--black);
+
 }
+
 html {
     overflow: hidden;
 }
 
 body {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #2e2e2e;
+    position        : absolute;
+    width           : 100%;
+    height          : 100%;
+    background-image:linear-gradient(red,black);
 }
 
 #footer {
-    position: absolute;
-    width: 100%;
-    bottom: 20px;
-    font-size: max(1vw, 10px);
+    position  : absolute;
+    width     : 100%;
+    bottom    : 20px;
+    font-size : max(1vw, 10px);
     text-align: center;
-    color: #cfcfcf;
+    color     : var(--white);
 }
 
 #copyrights {
-    color: #cfcfcf;
+    color: var(--white);
 }
 
 #iconHolder {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    animation: fadeOut .5s ease-out;
+    display             : block;
+    position            : absolute;
+    top                 : 50%;
+    left                : 50%;
+    transform           : translate(-50%, -50%);
+    text-align          : center;
+    animation           : fadeOut .5s ease-out;
     animation-play-state: paused;
 }
 
 #iconImg {
     margin-top: 1vh;
-    height: max(10vw, 50px);
+    height    : max(10vw, 50px);
     min-height: 100px;
-    filter: drop-shadow(0 0 3vh #3e7879);
-    animation: rollingIcon 2s ease-out infinite normal;
+    filter    : drop-shadow(0 0 3vh var(--blue-shadow));
+    animation : rollingIcon 2s ease-out infinite normal;
 }
 
 #iconTitle {
     text-align: center;
-    font-size: max(2vw, 20px);
-    color: #cfcfcf;
+    font-size : max(2vw, 20px);
+}
+
+.nameVar {
+    color: var(--white);
+
 }
 
 #versionText {
-    color: #cfcfcf;
+    color      : var(--aqua);
+    text-shadow: 0 0 3px var(--aqua);
+}
+
+.changelog {
+    color     : var(--white);
+    font-size : 15px;
+    text-align: center;
 }
 
 #releaseInfo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    flex-direction: column;
-    align-items: center;
+    position       : absolute;
+    top            : 50%;
+    left           : 50%;
+    transform      : translate(-50%, -50%);
+    display        : none;
+    flex-direction : column;
+    align-items    : center;
     justify-content: center;
-    width: min(50vw, 500px);
-    animation: fadeIn .5s ease-out forwards;
+    width          : min(50vw, 500px);
+    animation      : fadeIn .5s ease-out forwards;
 }
 
 #iconImg2 {
     margin-bottom: 1.5vh;
-    height: 10vw;
-    min-height: 100px;
-    filter: drop-shadow(0 0 2vh #3e7879);
+    height       : 10vw;
+    min-height   : 100px;
+    filter       : drop-shadow(0 0 2vh var(--blue-shadow));
 }
 
 #buttonsHolder {
     text-align: center;
     margin-top: 5vh;
-    width: 100%;
+    width     : 100%;
 }
 
 #subHolder {
-    margin-top: 1vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    margin-top     : 1vh;
+    width          : 100%;
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
     justify-content: space-between;
-    flex-wrap: no-wrap;
+    flex-wrap      : no-wrap;
+}
+
+
+#iconImg2:hover {
+    animation: rollingIcon 2s infinite;
 }
 
 .button {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #2bfbff;
-    border: solid #000 2px;
-    filter: drop-shadow(0 0 5px #3e7879);
+    display         : flex;
+    align-items     : center;
+    justify-content : space-evenly;
+    /* background-color: var(--aqua); */
+    background-image:linear-gradient(30deg,var(--black),var(--blue-shadow));
+    border          : solid #000 2px;
+    transition      : .2s;
+    transform       : unset;
+    box-shadow      : 0 0 0px var(--blue-shadow);
+    filter          : drop-shadow(0 0 0 var(--blue-shadow))
+}
+
+.button:hover {
+    transform : scale(1.05);
+    box-shadow: 0 0 5px var(--blue-shadow);
 }
 
 .button.sp {
-    width: 48%;
+    width : 46%;
     height: max(7vh, 50px);
 }
 
 .button div {
-    color: #2e2e2e;
+    color: var(--black);
 }
 
 #mpLogo {
-    height: 6vh;
-    padding-top: 15px;
+    height        : 6vh;
+    padding-top   : 15px;
     padding-bottom: 15px;
 }
 
 #mpOS {
-    font-size: 5vh;
+    font-size  : 5vh;
     font-weight: 700;
 }
 
@@ -161,13 +202,13 @@ body {
 }
 
 .spLogo {
-    height: 4vh;
-    padding-top: 10px;
+    height        : 4vh;
+    padding-top   : 10px;
     padding-bottom: 10px;
 }
 
 .spOS {
-    font-size: 3vh;
+    font-size  : 3vh;
     font-weight: 700;
 }
 
@@ -176,11 +217,11 @@ body {
 }
 
 #usePC {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    display  : none;
+    position : absolute;
+    top      : 50%;
+    left     : 50%;
     transform: translate(-50%, -50%);
-    color: #cfcfcf;
+    color    : var(--white);
     animation: fadeIn .5s ease-out forwards;
 }
