@@ -8,17 +8,17 @@
 @keyframes rollingIcon {
     0% {
         transform: rotate(0deg);
-        filter: drop-shadow(0 0 1vh #3e7879);
+        filter: drop-shadow(0 0 1vh rgba(var(--theme-accent1), 0.35));
     }
 
     75% {
         transform: rotate(360deg);
-        filter: drop-shadow(0 0 3vh #3e7879);
+        filter: drop-shadow(0 0 3vh rgba(var(--theme-accent1), 0.35));
     }
 
     100% {
         transform: rotate(360deg);
-        filter: drop-shadow(0 0 1vh #3e7879);
+        filter: drop-shadow(0 0 1vh rgba(var(--theme-accent1), 0.35));
     }
 }
 
@@ -91,7 +91,7 @@ body {
     margin-top: 1vh;
     height: max(10vw, 50px);
     min-height: 100px;
-    filter: drop-shadow(0 0 3vh #3e7879);
+    filter: drop-shadow(0 0 3vh rgba(var(--theme-accent1), 0.35));
     animation: rollingIcon 2s ease-out infinite normal;
 }
 
