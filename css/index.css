@@ -6,20 +6,53 @@
     --background: 16, 17, 18;
 }
 
-@keyframes rollingIcon {
+@-webkit-keyframes rollingIcon {
     0% {
         transform: rotate(0deg);
-        filter: drop-shadow(0 0 1vh rgba(var(--theme-accent1), 0.35));
+        -webkit-filter: drop-shadow(0 0 1vh rgba(var(--theme-accent1), 0.35));
+                filter: drop-shadow(0 0 1vh rgba(var(--theme-accent1), 0.35));
     }
 
     75% {
         transform: rotate(360deg);
-        filter: drop-shadow(0 0 3vh rgba(var(--theme-accent1), 0.35));
+        -webkit-filter: drop-shadow(0 0 3vh rgba(var(--theme-accent1), 0.35));
+                filter: drop-shadow(0 0 3vh rgba(var(--theme-accent1), 0.35));
     }
 
     100% {
         transform: rotate(360deg);
-        filter: drop-shadow(0 0 1vh rgba(var(--theme-accent1), 0.35));
+        -webkit-filter: drop-shadow(0 0 1vh rgba(var(--theme-accent1), 0.35));
+                filter: drop-shadow(0 0 1vh rgba(var(--theme-accent1), 0.35));
+    }
+}
+
+@keyframes rollingIcon {
+    0% {
+        transform: rotate(0deg);
+        -webkit-filter: drop-shadow(0 0 1vh rgba(var(--theme-accent1), 0.35));
+                filter: drop-shadow(0 0 1vh rgba(var(--theme-accent1), 0.35));
+    }
+
+    75% {
+        transform: rotate(360deg);
+        -webkit-filter: drop-shadow(0 0 3vh rgba(var(--theme-accent1), 0.35));
+                filter: drop-shadow(0 0 3vh rgba(var(--theme-accent1), 0.35));
+    }
+
+    100% {
+        transform: rotate(360deg);
+        -webkit-filter: drop-shadow(0 0 1vh rgba(var(--theme-accent1), 0.35));
+                filter: drop-shadow(0 0 1vh rgba(var(--theme-accent1), 0.35));
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
     }
 }
 
@@ -30,6 +63,16 @@
 
     100% {
         opacity: 100%;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
     }
 }
 
@@ -47,7 +90,10 @@
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 400;
     color: #2e2e2e;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     -webkit-user-drag: none;
 }
 
@@ -84,16 +130,20 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    animation: fadeOut .5s ease-out;
-    animation-play-state: paused;
+    -webkit-animation: fadeOut .5s ease-out;
+            animation: fadeOut .5s ease-out;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
 }
 
 #iconImg {
     margin-top: 1vh;
     height: max(10vw, 50px);
     min-height: 100px;
-    filter: drop-shadow(0 0 3vh rgba(var(--theme-accent1), 0.35));
-    animation: rollingIcon 2s ease-out infinite normal;
+    -webkit-filter: drop-shadow(0 0 3vh rgba(var(--theme-accent1), 0.35));
+            filter: drop-shadow(0 0 3vh rgba(var(--theme-accent1), 0.35));
+    -webkit-animation: rollingIcon 2s ease-out infinite normal;
+            animation: rollingIcon 2s ease-out infinite normal;
 }
 
 #iconTitle {
@@ -118,15 +168,18 @@ body {
     align-items: center;
     justify-content: center;
     min-width: min(60vw, 600px);
-    animation: fadeIn .5s ease-out forwards;
-    animation-play-state: paused;
+    -webkit-animation: fadeIn .5s ease-out forwards;
+            animation: fadeIn .5s ease-out forwards;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
 }
 
 #iconImg2 {
     margin-bottom: 1.5vh;
     height: 13vw;
     min-height: 130px;
-    filter: drop-shadow(0 0 2vh rgba(var(--theme-accent1), 0.35));
+    -webkit-filter: drop-shadow(0 0 2vh rgba(var(--theme-accent1), 0.35));
+            filter: drop-shadow(0 0 2vh rgba(var(--theme-accent1), 0.35));
 }
 
 #buttonsHolder {
@@ -216,13 +269,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #cfcfcf;
-    animation: fadeIn .5s ease-out forwards;
+    -webkit-animation: fadeIn .5s ease-out forwards;
+            animation: fadeIn .5s ease-out forwards;
 }
 
 #badges {
     display: none;
-    animation: fadeIn .5s ease-out forwards;
-    animation-play-state: paused;
+    -webkit-animation: fadeIn .5s ease-out forwards;
+            animation: fadeIn .5s ease-out forwards;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
 }
 
 #linksHolder {
