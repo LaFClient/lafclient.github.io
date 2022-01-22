@@ -5,10 +5,12 @@
         transform: rotate(0deg);
         filter: drop-shadow(0 0 1vh #3e7879);
     }
+
     75% {
         transform: rotate(360deg);
         filter: drop-shadow(0 0 3vh #3e7879);
     }
+
     100% {
         transform: rotate(360deg);
         filter: drop-shadow(0 0 1vh #3e7879);
@@ -19,6 +21,7 @@
     0% {
         opacity: 0%;
     }
+
     100% {
         opacity: 100%;
     }
@@ -28,6 +31,7 @@
     0% {
         opacity: 100%;
     }
+
     100% {
         opacity: 0%;
     }
@@ -38,6 +42,7 @@
     font-weight: 400;
     color: #2e2e2e;
 }
+
 html {
     overflow: hidden;
 }
@@ -84,11 +89,13 @@ body {
 #iconTitle {
     text-align: center;
     font-size: max(2vw, 20px);
+    font-weight: 700;
     color: #cfcfcf;
 }
 
 #versionText {
     color: #cfcfcf;
+    font-weight: 700;
 }
 
 #releaseInfo {
@@ -102,6 +109,7 @@ body {
     justify-content: center;
     width: min(50vw, 500px);
     animation: fadeIn .5s ease-out forwards;
+    animation-play-state: paused;
 }
 
 #iconImg2 {
@@ -134,6 +142,12 @@ body {
     background-color: #2bfbff;
     border: solid #000 2px;
     filter: drop-shadow(0 0 5px #3e7879);
+    transition: all .25s ease-out;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px #97c1c2);
 }
 
 .button.sp {
@@ -183,4 +197,41 @@ body {
     transform: translate(-50%, -50%);
     color: #cfcfcf;
     animation: fadeIn .5s ease-out forwards;
+}
+
+#badges {
+    display: none;
+    animation: fadeIn .5s ease-out forwards;
+    animation-play-state: paused;
+}
+
+#linksHolder {
+    font-size: max(1vw, 10px);
+    color: #cfcfcf;
+}
+
+#helpLink {
+    font-size: max(1vw, 10px);
+    color: #cfcfcf;
+    transition: all .1s;
+}
+
+#helpLink:hover {
+    color: #2bfbff;
+}
+
+#helpIcon {
+    font-size: max(1vw, 10px);
+    color: #cfcfcf;
+    vertical-align: -0.5vh;
+}
+
+#releaseLink {
+    font-size: max(1vw, 10px);
+    color: #cfcfcf;
+    transition: all .1s;
+}
+
+#releaseLink:hover {
+    color: #2bfbff;
 }

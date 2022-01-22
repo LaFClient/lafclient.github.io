@@ -73,12 +73,18 @@ window.onload = () => {
             e.bit.innerText = osInfo[platforms[0]][2];
             platforms.shift();
         })
+        document.getElementById('releaseLink').setAttribute('href', releaseInfo.url);
+        document.getElementById('releaseBadge').setAttribute('src', `https://img.shields.io/badge/${releaseInfo.version}-Release%20Note-brightgreen`)
         document.getElementById('versionText').innerText = releaseInfo.version
         document.getElementById('iconHolder').style.animationPlayState = 'running'
         setTimeout(() => {
             document.getElementById('iconHolder').style.display = 'none';
-            document.getElementById('releaseInfo').style.animationPlayState = 'running'
-            setTimeout(() => document.getElementById('releaseInfo').style.display = 'flex', 490);
+            document.getElementById('releaseInfo').style.animationPlayState = 'running';
+            document.getElementById('badges').style.animationPlayState = 'running';
+            setTimeout(() => {
+                document.getElementById('releaseInfo').style.display = 'flex';
+                document.getElementById('badges').style.display = 'block';
+            }, 490);
         }, 490)
     });
 }

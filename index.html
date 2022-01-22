@@ -4,9 +4,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:url" content="https://laf.tokyo" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="LaF" />
+        <meta property="og:title" content="LaF Client" />
         <meta property="og:description" content="LaF Client Official Website" />
-        <meta property="og:site_name" content="LaF" />
+        <meta property="og:site_name" content="LaF Client" />
         <meta property="og:image" content="https://laf.tokyo/img/thumbnail.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@nullA1m" />
@@ -30,6 +30,10 @@
                     <img id="iconImg2" src="./img/icon.png"/>
                 </div>
                 LaF Client <span id="versionText">vX.Y.Z</span>
+                <div id="linksHolder">
+                    <a id="releaseLink" target="_blank" rel="noopener noreferrer">Release Note</a> | 
+                    <a id="helpLink" target="_blank" href="https://github.com/LaFClient/LaF#readme" rel="noopener noreferrer">Help Page</a>
+                </div>
             </div>
             <div id="buttonsHolder">
                 <div class="button">
@@ -61,10 +65,13 @@
             </div>
         </div>
         <div id="footer">
-            <a href="https://github.com/LaFClient/LaF" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/GitHub-LaFClient%2FLaF-white" alt=""></a>
-            <a href="https://github.com/LaFClient/LaF/releases/latest" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/downloads/LaFClient/LaF/total" alt=""></a>
-            <a href="https://discord.gg/9M9TgDRt9G"  target="_blank" rel="noopener noreferrer"><img src="https://discord.com/api/guilds/911130667448954880/widget.png?style=shield" alt=""></a>
-            <div style="height: 10px;"></div>
+            <div id="badges">
+                <a href="https://github.com/LaFClient/LaF" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/GitHub-LaFClient%2FLaF-white" alt=""></a>
+                <a href="https://github.com/LaFClient/LaF/releases" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/downloads/LaFClient/LaF/total" alt=""></a>
+                <a href="https://github.com/LaFClient/LaF/releases/latest" target="_blank" rel="noopener noreferrer"><img id="releaseBadge" src="" alt=""></a>
+                <a href="https://discord.gg/9M9TgDRt9G"  target="_blank" rel="noopener noreferrer"><img src="https://discord.com/api/guilds/911130667448954880/widget.png?style=shield" alt=""></a>
+            </div>
+            <div style="height: 5px;"></div>
             <div id="copyrights">(c) 2022 LaF Development Team</div>
         </div>
     </body>
