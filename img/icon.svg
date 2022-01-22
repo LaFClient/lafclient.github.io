@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46666"
+   version="1.1"
+   id="svg1615"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title39326">LaF</title>
+  <sodipodi:namedview
+     id="namedview1617"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="512px"
+     inkscape:zoom="4"
+     inkscape:cx="209.75"
+     inkscape:cy="223.125"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs1612" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Outline"
+     style="display:inline;opacity:1"
+     sodipodi:insensitive="true">
+    <circle
+       style="fill:#000000;stroke-width:0.207451;-inkscape-stroke:none;stop-color:#000000"
+       id="path1711"
+       cx="67.73333"
+       cy="67.73333"
+       r="62.970833" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="Fill"
+     sodipodi:insensitive="true">
+    <circle
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#00f0ff;fill-opacity:1;stroke-width:0.530205;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       id="path37329"
+       cx="67.73333"
+       cy="67.73333"
+       r="56.091667" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Stripes"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       id="rect2021"
+       style="display:inline;fill:#00f0ff;fill-opacity:1;stroke-width:1.29589;-inkscape-stroke:none;stop-color:#000000"
+       d="M 284.37891,45.923828 152.27148,440.75 a 212,212 0 0 0 75.86914,25.37891 L 360.17969,71.503906 A 212,212 0 0 0 284.37891,45.923828 Z"
+       transform="scale(0.26458333)" />
+    <path
+       id="rect2021-3"
+       style="display:inline;fill:#7bfff3;fill-opacity:1;stroke-width:1.29589;-inkscape-stroke:none;stop-color:#000000"
+       d="M 360.17969,71.503906 228.14062,466.12891 A 212,212 0 0 0 256,468 a 212,212 0 0 0 58.64258,-8.2793 l 110.75,-330.99414 A 212,212 0 0 0 360.17969,71.503906 Z"
+       transform="scale(0.26458333)" />
+    <path
+       id="rect2021-8"
+       style="display:inline;fill:#00f0ff;fill-opacity:1;stroke-width:1.29589;-inkscape-stroke:none;stop-color:#000000"
+       d="m 425.39258,128.72656 -110.75,330.99414 a 212,212 0 0 0 109.19726,-74.22851 l 44.08204,-131.75196 a 212,212 0 0 0 -42.5293,-125.01367 z"
+       transform="scale(0.26458333)" />
+    <path
+       id="rect2021-7"
+       style="display:inline;fill:#7bfff3;fill-opacity:1;stroke-width:1.29589;-inkscape-stroke:none;stop-color:#000000"
+       d="M 467.92188,253.74023 423.83984,385.49219 A 212,212 0 0 0 468,256 a 212,212 0 0 0 -0.0781,-2.25977 z"
+       transform="scale(0.26458333)" />
+    <path
+       id="rect2021-2"
+       style="display:inline;fill:#7bfff3;fill-opacity:1;stroke-width:1.29589;-inkscape-stroke:none;stop-color:#000000"
+       d="m 256,44 a 212,212 0 0 0 -58.05859,8.134766 L 86.980469,383.76562 A 212,212 0 0 0 152.27148,440.75 L 284.37891,45.923828 A 212,212 0 0 0 256,44 Z"
+       transform="scale(0.26458333)" />
+    <path
+       id="rect2021-1"
+       style="display:inline;fill:#00f0ff;fill-opacity:1;stroke-width:1.29589;-inkscape-stroke:none;stop-color:#000000"
+       d="M 197.94141,52.134766 A 212,212 0 0 0 89.019531,125.54492 L 44.126953,259.71484 a 212,212 0 0 0 42.853516,124.05078 z"
+       transform="scale(0.26458333)" />
+    <path
+       id="rect2021-9"
+       style="display:inline;fill:#7bfff3;fill-opacity:1;stroke-width:1.29589;-inkscape-stroke:none;stop-color:#000000"
+       d="M 89.019531,125.54492 A 212,212 0 0 0 44,256 a 212,212 0 0 0 0.126953,3.71484 z"
+       transform="scale(0.26458333)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Letters"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       id="rect28217-8"
+       style="font-variation-settings:normal;display:inline;vector-effect:none;fill:#a3a3a3;fill-opacity:1;stroke-width:0.262525;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 28.016798,48.154167 -3.155253,11.773958 h 42.865971 l 3.155253,-11.773958 z m 45.919925,0 -3.155255,11.773958 h 13.838155 11.414213 3.105123 l -1.921579,7.170621 -5.984389,22.33042 H 105.75233 L 116.81355,48.154167 Z M 23.940035,63.367708 20.769792,75.196959 h 13.831434 11.414216 3.10512 l -3.813697,14.232207 h 14.514683 l 6.983939,-26.061458 z" />
+    <path
+       id="rect28217"
+       style="font-variation-settings:normal;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:0.262525;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 26.958464,47.095833 -3.155253,11.773958 h 42.865971 l 3.155253,-11.773958 z m 45.919925,0 -3.155255,11.773958 h 13.838155 11.414213 3.105123 l -1.921579,7.170621 -5.984389,22.33042 H 104.69399 L 115.75521,47.095833 Z M 22.881701,62.309374 19.711458,74.138625 h 13.831434 11.414216 3.10512 l -3.813697,14.232207 h 14.514683 l 6.983939,-26.061458 z" />
+  </g>
+  <metadata
+     id="metadata39324">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>LaF</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

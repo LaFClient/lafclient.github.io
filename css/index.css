@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root {
+    --theme-accent1: 123, 255, 243;
+    --theme-accent2: 0, 240, 255;
+}
+
 @keyframes rollingIcon {
     0% {
         transform: rotate(0deg);
@@ -41,6 +46,8 @@
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 400;
     color: #2e2e2e;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 html {
@@ -51,13 +58,15 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #2e2e2e;
+    background-color: #131313;
+    margin: 0;
 }
 
 #footer {
     position: absolute;
     width: 100%;
-    bottom: 20px;
+    bottom: 0;
+    padding: 20px 0;
     font-size: max(1vw, 10px);
     text-align: center;
     color: #cfcfcf;
@@ -107,16 +116,16 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: min(50vw, 500px);
+    min-width: min(60vw, 600px);
     animation: fadeIn .5s ease-out forwards;
     animation-play-state: paused;
 }
 
 #iconImg2 {
     margin-bottom: 1.5vh;
-    height: 10vw;
-    min-height: 100px;
-    filter: drop-shadow(0 0 2vh #3e7879);
+    height: 13vw;
+    min-height: 130px;
+    filter: drop-shadow(0 0 2vh rgba(var(--theme-accent1), 0.35));
 }
 
 #buttonsHolder {
@@ -139,24 +148,38 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #2bfbff;
+    background-color: rgba(var(--theme-accent2), 1);
+    background: repeating-linear-gradient(108.5deg,
+        rgba(var(--theme-accent1), 1) 0,
+        rgba(var(--theme-accent1), 1) 30px,
+        rgba(var(--theme-accent2), 1) 31px,
+        rgba(var(--theme-accent2), 1) 60px,
+        rgba(var(--theme-accent1), 1) 61px);
     border: solid #000 2px;
-    filter: drop-shadow(0 0 5px #3e7879);
-    transition: all .25s ease-out;
+    box-shadow: 0 0 30px rgba(var(--theme-accent1), 0.15);
+    background-position: 100px 0;
+    background-size: 64px 100%;
+    transition: background-position .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
 }
 
 .button:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 10px #97c1c2);
+    background-position: 0 0;
 }
 
 .button.sp {
-    width: 48%;
+    padding: 0 10px;
+    width: calc(48% - 20px);
     height: max(7vh, 50px);
 }
 
 .button div {
     color: #2e2e2e;
+}
+
+.button > div:last-child {
+    display: flex;
+    flex-direction: column;
 }
 
 #mpLogo {
@@ -217,7 +240,7 @@ body {
 }
 
 #helpLink:hover {
-    color: #2bfbff;
+    color: rgba(var(--theme-accent2), 1);
 }
 
 #helpIcon {
@@ -233,5 +256,5 @@ body {
 }
 
 #releaseLink:hover {
-    color: #2bfbff;
+    color: rgba(var(--theme-accent2), 1);
 }
