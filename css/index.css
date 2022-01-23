@@ -289,7 +289,7 @@ body {
 #helpLink {
     font-size: max(1vw, 10px);
     color: #cfcfcf;
-    transition: all .1s;
+    transition: color .1s;
 }
 
 #helpLink:hover {
@@ -305,7 +305,7 @@ body {
 #releaseLink {
     font-size: max(1vw, 10px);
     color: #cfcfcf;
-    transition: all .1s;
+    transition: color .1s;
 }
 
 #releaseLink:hover {
