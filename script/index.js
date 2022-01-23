@@ -74,7 +74,6 @@ window.onload = () => {
             platforms.shift();
         })
         document.getElementById('releaseLink').setAttribute('href', releaseInfo.url);
-        document.getElementById('releaseBadge').setAttribute('src', `https://img.shields.io/badge/${releaseInfo.version}-Release%20Note-brightgreen`)
         document.getElementById('versionText').innerText = releaseInfo.version
         document.getElementById('iconHolder').style.animationPlayState = 'running'
         setTimeout(() => {
