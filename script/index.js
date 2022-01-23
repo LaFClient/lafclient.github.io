@@ -64,9 +64,9 @@
             ];
             const platforms = [os].concat(['windows nt', 'mac os x', 'linux'].filter(item => item !== os));
             const osInfo = {
-                'windows nt': ['./img/windows.svg', 'Windows', '32/64bit', releaseInfo.winInstaller],
-                'mac os x': ['./img/apple.svg', 'macOS', '64bit', releaseInfo.macInstaller],
-                'linux': ['./img/linux.svg', 'Linux', '64bit', releaseInfo.linuxInstaller]
+                'windows nt': ['./img/windows.svg', 'Windows', '32/64-bit', releaseInfo.winInstaller],
+                'mac os x': ['./img/apple.svg', 'macOS', '64-bit', releaseInfo.macInstaller],
+                'linux': ['./img/linux.svg', 'Linux', '64-bit', releaseInfo.linuxInstaller]
             };
             Object.values(platformElements).forEach((e, i) => {
                 const platform = platforms[i];
