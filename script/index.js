@@ -19,9 +19,9 @@ window.onload = () => {
             releaseTitle: latest.name,
             publishDate: latest.published_at,
             winInstaller: {
-                name: 'LaF_Setup_Windows.exe',
-                url: latest.assets.filter(asset => asset.name == 'LaF_Setup_Windows.exe')[0].browser_download_url,
-                size: Math.round(latest.assets.filter(asset => asset.name == 'LaF_Setup_Windows.exe')[0].size / (1024 ** 2) * 10) / 10 + 'MB'
+                name: 'LaF_Setup_Windows_x64.exe',
+                url: latest.assets.filter(asset => asset.name == 'LaF_Setup_Windows_x64.exe')[0].browser_download_url,
+                size: Math.round(latest.assets.filter(asset => asset.name == 'LaF_Setup_Windows_x64.exe')[0].size / (1024 ** 2) * 10) / 10 + 'MB'
             },
             macInstaller: {
                 name: 'LaF_Setup_macOS_x64.dmg',
