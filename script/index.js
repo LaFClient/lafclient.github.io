@@ -1,4 +1,9 @@
 (function() {
+    const downloadFile = (url) => {
+        const link = document.createElement('a');
+        link.href = url;
+        link.click();
+    }
     window.onload = () => {
         if (window.screen.width < 750) {
             document.getElementById('iconHolder').style.animationPlayState = 'running'
@@ -71,7 +76,7 @@
                 e.bit.innerText = osInfo[platform][2];
                 e.logo.parentElement.onclick = (evt) => {
                     evt.preventDefault();
-                    window.open(osInfo[platform][3].url, '_blank').focus();
+                    downloadFile(osInfo[platform][3].url);
                 }
             });
 
