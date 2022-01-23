@@ -81,7 +81,6 @@
             });
 
             document.getElementById('releaseLink').setAttribute('href', releaseInfo.url);
-            document.getElementById('releaseBadge').setAttribute('src', `https://img.shields.io/badge/${ releaseInfo.version }-Release%20Note?labelColor=202225&color=006699&label=Newest Release`);
             document.getElementById('versionText').innerText = releaseInfo.version;
             document.getElementById('iconHolder').style.animationPlayState = 'running';
 
