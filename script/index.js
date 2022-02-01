@@ -12,6 +12,9 @@ window.onload = () => {
     .then(res => res.json())
     .then((data) => {
         const latest = data.filter(release => !release.draft && !release.prerelease)[0]
+        const windowsRelease = latest.assets.filter(asset => asset.name == 'LaF_Setup_Windows_x64.exe')[0] || null;
+        const macOSRelease = latest.assets.filter(asset => asset.name == 'LaF_Setup_macOS_x64.dmg')[0] || { size: 0, browser_download_url: '#' };
+        const linuxRelease = latest.assets.filter(asset => asset.name == 'LaF_Setup_Linux_x86_64.AppImage')[0] || { size: 0, browser_download_url: '#' };
         const releaseInfo = {
             url: latest.html_url,
             body: latest.body,
@@ -20,18 +23,18 @@ window.onload = () => {
             publishDate: latest.published_at,
             winInstaller: {
                 name: 'LaF_Setup_Windows_x64.exe',
-                url: latest.assets.filter(asset => asset.name == 'LaF_Setup_Windows_x64.exe')[0].browser_download_url,
-                size: Math.round(latest.assets.filter(asset => asset.name == 'LaF_Setup_Windows_x64.exe')[0].size / (1024 ** 2) * 10) / 10 + 'MB'
+                url: windowsRelease.browser_download_url,
+                size: windowsRelease.size ? Math.round(windowsRelease.size / (1024 ** 2) * 10) / 10 + 'MB' : 'Unavailable'
             },
             macInstaller: {
                 name: 'LaF_Setup_macOS_x64.dmg',
-                url: latest.assets.filter(asset => asset.name == 'LaF_Setup_macOS_x64.dmg')[0].browser_download_url,
-                size: Math.round(latest.assets.filter(asset => asset.name == 'LaF_Setup_macOS_x64.dmg')[0].size / (1024 ** 2) * 10) / 10 + 'MB'
+                url: macOSRelease.browser_download_url,
+                size: macOSRelease.size ? Math.round(macOSRelease.size / (1024 ** 2) * 10) / 10 + 'MB' : 'Unavailable'
             },
             linuxInstaller: {
                 name: 'LaF_Setup_Linux_x86_64.AppImage',
-                url: latest.assets.filter(asset => asset.name == 'LaF_Setup_Linux_x86_64.AppImage')[0].browser_download_url,
-                size: Math.round(latest.assets.filter(asset => asset.name == 'LaF_Setup_Linux_x86_64.AppImage')[0].size / (1024 ** 2) * 10) / 10 + 'MB'
+                url: linuxRelease.browser_download_url,
+                size: linuxRelease.size ? Math.round(linuxRelease.size / (1024 ** 2) * 10) / 10 + 'MB' : 'Unavailable'
             },
         };
         const ua = window.navigator.userAgent.toLowerCase();
